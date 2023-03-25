@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./index.css";
-import Footer from "./components/Footer";
-import Page from "./components/Page"; /* Includes Components: About, Portfolio, Contact, & Resume */
+import "bootstrap/dist/css/bootstrap.min.css";
+// import { AntDesignOutlined } from "@ant-design/icons";
+// import { Avatar } from "antd";
+import Footer from "./componets/Footer";
+import Page from "./componets/Page";
 
 function App() {
   const [pages] = useState([
@@ -25,10 +28,7 @@ function App() {
       />
       <section className="hero">
         <div className="hero-name">
-          <p>Hoon Kim</p>
-          <div className="hero-text">
-            <p>My Dev Page</p>
-          </div>
+          <p>Marta Wambaugh</p>
         </div>
       </section>
       <main>

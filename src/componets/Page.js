@@ -1,22 +1,22 @@
 import React from "react";
-import About from "../About";
-import Portfolio from "../Project";
-import Contact from "../Contact";
-import Resume from "../Resume";
+import AboutMeCard from "../componets/AboutMeCard";
+import Portfolio from "../componets/Project";
+import ContactCard from "../componets/ContactCard";
+import Resume from "../componets/Resume";
 
 function Page({ currentPage }) {
   const pageRender = () => {
     switch (currentPage.name) {
       case "About":
-        return <About />;
+        return <AboutMeCard />;
       case "Portfolio":
         return <Portfolio />;
       case "Contact":
-        return <Contact />;
+        return <ContactCard />;
       case "Resume":
         return <Resume />;
       default:
-        return <About />;
+        return <AboutMeCard />;
     }
   };
 
